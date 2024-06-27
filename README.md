@@ -4,7 +4,8 @@ Here we calculate the charges of insurance based on some features.
 Project Overview
 The Insurance Price Prediction project is designed to predict the insurance charges for individuals based on their demographic and health-related information. This project utilizes various machine learning models to provide accurate predictions and showcases the importance of data preprocessing, feature engineering, and model evaluation in machine learning pipelines.
 
-Table of Contents
+#**Table of Contents**
+
 Project Overview
 Dataset
 Project Structure
@@ -17,7 +18,9 @@ Future Work
 Contributing
 License
 Dataset
-The dataset used in this project is the Insurance dataset, which contains the following features:
+
+
+#The dataset used in this project is the Insurance dataset, which contains the following features:
 
 Age
 Sex
@@ -29,6 +32,9 @@ Charges (Medical charges billed by health insurance)
 Project Structure
 arduino
 Copy code
+
+#The structure of project is 
+
 Insurance-Price-Prediction/
 │
 ├── templates/
@@ -44,7 +50,10 @@ Insurance-Price-Prediction/
 ├── app.py
 ├── requirements.txt
 └── README.md
-Installation
+
+
+#Installation
+
 Clone the repository:
 
 bash
@@ -80,7 +89,9 @@ Once logged in, you will be redirected to the prediction page where you can inpu
 
 The model will predict the insurance charges based on the input features and display the result.
 
-Models Used
+
+#Models Used
+
 The project explores multiple machine learning models to predict insurance charges:
 
 Linear Regression
@@ -92,7 +103,7 @@ Decision Tree Regressor
 Random Forest Regressor
 Among these, the Random Forest Regressor was found to be the most accurate model with an accuracy of approximately 87.63%.
 
-Results
+#Results
 The Random Forest Regressor model provided the best results for predicting insurance charges with the following accuracy:
 
 Random Forest Regressor: 87.63%
