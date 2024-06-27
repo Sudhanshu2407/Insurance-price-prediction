@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <img
+  src="{{ url_for('static', filename='Images/login_image.png') }}"
+  alt="Insurance price Prediction"
+    width=400
+    align=center/>
+
+</head>
+<body>
+     
+   
+    <div class="login-container">
+         <form method="post" action="{{ url_for('login') }}">
+            <h2>Login</h2>
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Login</button>
+        </form>
+        <form method="post" action="{{ url_for('signup') }}">
+            <h2>Sign Up</h2>
+            <label for="new_username">Username</label>
+            <input type="text" id="new_username" name="username" required>
+            <label for="new_password">Password</label>
+            <input type="password" id="new_password" name="password" required>
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+</body>
+</html>

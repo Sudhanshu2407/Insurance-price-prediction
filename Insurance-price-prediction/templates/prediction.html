@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predict Insurance Charges</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <img
+      src="{{ url_for('static', filename='Images/main_image.png') }}"
+      alt="Insurance price Prediction"
+        width=400
+        align=center/>
+
+    <div class="main-container">
+        <h2>Insurance Price Prediction</h2>
+        <form method="post" action="{{ url_for('predict') }}">
+            <label for="age">Age</label>
+            <input type="number" id="age" name="age" required>
+            <label for="sex">Sex (0 for female, 1 for male)</label>
+            <input type="number" id="sex" name="sex" required>
+            <label for="bmi">BMI</label>
+            <input type="number" step="0.1" id="bmi" name="bmi" required>
+            <label for="children">Children</label>
+            <input type="number" id="children" name="children" required>
+            <label for="smoker">Smoker (0 for no, 1 for yes)</label>
+            <input type="number" id="smoker" name="smoker" required>
+            <label for="region">Region (0, 1, 2, 3)</label>
+            <input type="number" id="region" name="region" required>
+            <button type="submit">Predict</button>
+        </form>
+        {% if charges %}
+            <h3>Predicted Insurance Charges: {{ charges }}</h3>
+        {% endif %}
+    </div>
+</body>
+</html>
